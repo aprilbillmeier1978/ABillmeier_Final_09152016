@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobile.rasmussen.edu.afinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartApp"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.SplashScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.MainMenu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CreateTreasure"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.CreateTreasure" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Help"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.Help" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.UserProfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GamePlay"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.GamePlay" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TreasureOne"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.TreasureOne" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TreasureTwo"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.TreasureTwo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TreasureThree"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.TreasureThree" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TreasureFour"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.TreasureFour" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TreasureFive"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="mobile.rasmussen.edu.afinal.TreasureFive" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+    </application>
+
+</manifest>

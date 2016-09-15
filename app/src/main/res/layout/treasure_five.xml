@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:weightSum="1"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="114dp"
+        android:layout_height="58dp"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Score: "
+            android:id="@+id/score"
+            android:layout_marginBottom="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreText"
+            android:text="5"
+            android:singleLine="true"
+            android:layout_weight="0.08"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="131dp"
+        android:id="@+id/artImageView"
+        android:src="@drawable/nighthawks"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="375dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guessArtEditText"
+            android:hint="Type the Name of the ArtWork Here"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/enterAttempts"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location: 41.8715462972797, -87.62215297669172"
+            android:id="@+id/collectionTextView"
+            android:visibility="invisible"
+            android:layout_below="@+id/guessArtEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nighthawks"
+            android:id="@+id/answerTextView"
+
+            android:visibility="invisible"
+            android:layout_below="@+id/collectionTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER"
+            android:id="@+id/enter_button"
+            android:layout_below="@+id/answerTextView"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HINT 1"
+            android:id="@+id/hintButton1"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/enter_button" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HINT 2"
+            android:id="@+id/hintButton2"
+            android:layout_below="@+id/hintButton1"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HINT 3"
+            android:id="@+id/hintButton3"
+            android:layout_below="@+id/hintButton2"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HINT 4"
+            android:id="@+id/hintButton4"
+            android:layout_below="@+id/hintButton3"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Painted in 1942"
+            android:id="@+id/clue1"
+            android:layout_above="@+id/hintButton2"
+            android:layout_toEndOf="@+id/hintButton1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Artist Edward Hopper"
+            android:id="@+id/clue2"
+            android:visibility="invisible"
+            android:layout_above="@+id/hintButton3"
+            android:layout_alignEnd="@+id/answerTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Referenced in a Simpsons Episode"
+            android:id="@+id/clue3"
+            android:visibility="invisible"
+            android:layout_above="@+id/hintButton4"
+            android:layout_toEndOf="@+id/hintButton3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="_ _ _ _ _hawks"
+            android:id="@+id/clue4"
+            android:layout_alignBottom="@+id/hintButton4"
+            android:layout_alignStart="@+id/clue3"
+            android:visibility="invisible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/back_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

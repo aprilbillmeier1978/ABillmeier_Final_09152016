@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        tools:context="mobile.rasmussen.edu.afinal.GamePlay" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="Treasure One"
+            android:id="@+id/button1"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="#ccd2f8"
+            android:layout_above="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="Treasure Two"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="#a8b1fc"
+            android:layout_above="@+id/button3"
+            android:layout_alignStart="@+id/button4"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_marginTop="3dp" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="Treasure Three"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="#7c8ffc"
+            android:layout_above="@+id/button4"
+            android:layout_alignStart="@+id/button4"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_marginTop="3dp" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="Treasure Four"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="#4f66fc"
+            android:layout_above="@+id/button5"
+            android:layout_alignStart="@+id/button5" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="Treasure Five"
+            android:id="@+id/button5"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="#0223fb"
+            android:layout_above="@+id/total_score"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Total Score: "
+            android:id="@+id/total_score"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textIsSelectable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
